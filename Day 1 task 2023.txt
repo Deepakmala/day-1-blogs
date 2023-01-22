@@ -1,0 +1,79 @@
+Blog on differences between HTTP1.1 VS HTTP2.
+
+HTTP, or Hypertext Transfer Protocol is the standard protocol used to transmit data between web browsers and servers. There have been several versions of HTTP throughout the years, with the most recent being HTTP/2 and HTTP/1.1. In this blog post, we will be discussing the differences between these two versions of the protocol.
+
+HTTP/1.1, which was first introduced in 1999, is the most widely used version of HTTP. It is the foundation for the World Wide Web and has been the standard protocol for web communication for over two decades. One of the key features of HTTP/1.1 is that it is a request-response protocol, meaning that a client sends a request to a server and the server responds with the requested information.
+
+HTTP/2, on the other hand, was introduced in 2015 as an improvement over HTTP/1.1. One of the main differences between the two versions is that HTTP/2 is a binary protocol, while HTTP/1.1 is a text-based protocol. This means that HTTP/2 is more efficient and faster than HTTP/1.1, as it can transmit data in binary format, which is smaller and easier to process.
+
+Another major difference between the two versions is the way they handle requests. HTTP/1.1 requires that each request be handled separately, which can lead to delays and inefficiencies. HTTP/2, on the other hand, allows for multiple requests to be handled at the same time, which results in faster and more efficient communication between the client and the server. This is known as "Multiplexing"
+
+Another important feature of HTTP/2 is Server Push. With HTTP/1.1, a client would need to make multiple requests to the server to receive all the necessary resources for a webpage. With HTTP/2, the server can "push" resources to the client without the need for additional requests. This results in faster loading times for webpages and a better user experience.
+
+HTTP/2 also has support for header compression, which reduces the size of headers and improves the overall performance of the protocol. HTTP/1.1, on the other hand, does not have built-in support for header compression.
+
+Another difference between HTTP/1.1 and HTTP/2 is that HTTP/2 allows for improved security through the use of HTTPS. It uses the same encryption as HTTPS, but it is more efficient and faster due to its binary nature. Additionally, HTTP/2 uses a new frame structure which allows for more efficient data transfer, reducing the number of packets sent over the network. Furthermore, HTTP/2 allows for more efficient caching of resources, as it allows for the server to send expiration and validation information for resources. Another difference is that, HTTP/2 uses a single connection for multiple requests, this means that instead of opening a new connection for each request, which can be time-consuming and resource-intensive, a single connection can be used for multiple requests. This improves the performance and reduces the overhead of opening and closing connections.
+
+In conclusion, while HTTP/1.1 is still widely used and supported, HTTP/2 offers several significant improvements over its predecessor. Its binary nature allows for faster and more efficient communication, and its support for multiplexing and server push results in faster loading times for webpages. Additionally, HTTP/2's support for header compression further improves the performance of the protocol. As the internet continues to evolve, it's likely that more and more websites will start to adopt HTTP/2 as the standard protocol for web communication.
+
+
+
+
+Blog about objects and its internal representation in javascript.
+
+JavaScript is a programming language that is widely used for creating dynamic and interactive web applications. One of the key concepts in JavaScript is the idea of objects and their internal representations. In this blog post, we will explore the different ways in which objects are represented in JavaScript and how they can be used to store and manipulate data.
+
+Objects in JavaScript are a collection of key-value pairs. These key-value pairs can be used to store data, functions, or even other objects. Objects in JavaScript are also known as dictionaries or associative arrays. They are similar to arrays, but instead of using numerical indexes to access elements, objects use string keys.
+
+JavaScript objects can be created using the object literal notation. This notation uses curly braces to enclose a list of key-value pairs. For example, the following code creates an object called "person" with three properties: "name", "age", and "gender".
+
+var person = {
+    name: "Daniel",
+    age: 30,
+    gender: "male"
+};
+
+Another way to create objects in JavaScript is using the object constructor function. This function is called "Object" and can be used to create an empty object. Properties and methods can then be added to the object using the dot notation or the square bracket notation.
+
+var person = new Object();
+person.name = "Daniel";
+person.age = 30;
+person.gender = "male";
+
+In addition to creating objects using the object literal notation or the object constructor function, JavaScript also provides several built-in objects such as Array, Date, and Math. These built-in objects have pre-defined properties and methods that can be used to perform various tasks.
+
+One important feature of JavaScript objects is that they are dynamic. This means that properties and methods can be added or removed from an object at any time. For example, the following code adds a new property called "address" to the "person" object.
+
+person.address = "123 Main St";
+
+Objects in JavaScript can also be used to store functions. These functions are known as methods. Methods can be added to an object using the same notation as properties. For example, the following code adds a method called "speak" to the "person" object.
+
+person.speak = function() {
+    console.log("Hello, my name is " + this.name);
+};
+
+In this code, the "this" keyword refers to the current object. In this case, "this" refers to the "person" object.
+
+Another way to create objects in JavaScript is by using the object.create method. This method creates a new object with the specified prototype. For example, the following code creates a new object called "employee" that has the same properties and methods as the "person" object.
+
+var employee = Object.create(person);
+
+Finally, JavaScript also supports a feature called object destructuring. This feature allows us to extract values from an object and assign them to separate variables. For example, the following code extracts the "name" and "age" properties from the "person" object and assigns them to separate variables.
+
+var { name, age } = person;
+console.log(name); // "John Doe"
+console.log(age); // 30
+
+In conclusion, objects in JavaScript are a powerful and versatile data structure that can be used to store and manipulate data in a variety of ways
+
+
+
+
+
+
+
+
+
+
+
+
